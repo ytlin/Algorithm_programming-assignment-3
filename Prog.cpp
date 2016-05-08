@@ -26,7 +26,7 @@ int main(void)
       for(int i=0 ; i<n ; i++)
       {
          sum += N[i];
-         if(sum < 0) sum = 0;            //如果總和變成負的代表目前連續子陣列斷掉,         sum從重計算
+         if(sum < 0) sum = 0;            //如果總和變成負的代表目前連續子陣列斷掉,sum重新計算
          else if(sum > max) max = sum;   //更新目前最大子陣列總和
       }
 
